@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra7Dev Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body.dark-mode {
+        background-color: #000;
+        color: #fff;
+      }
+      .dark-mode .bg-light {
+        background-color: #333 !important;
+      }
+      .dark-mode .bg-dark {
+        background-color: #111 !important;
+      }
+      .dark-mode .navbar-light .navbar-nav .nav-link {
+        color: #fff !important;
+      }
+      .scroll-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+      .dark-mode .carousel-control-prev-icon,
+      .dark-mode .carousel-control-next-icon {
+        filter: invert(1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-light py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0">Indra7Dev</h1>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5">
+      <div class="container d-flex align-items-center">
+        <div class="me-4">
+          <h2>Welcome to My Portfolio</h2>
+          <p>
+            This is a brief description about me. Feel free to explore my
+            projects and get in touch.
+          </p>
+          <a href="kartu_nama/kartu.html" class="btn btn-primary"
+            >Connect with Me</a
+          >
+        </div>
+        <div>
+          <img
+            src="img/foto.jpg"
+            alt="Placeholder Image"
+            class="img-fluid rounded-circle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>
+          Information about me goes here. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Odio blanditiis rerum corrupti minus corporis a
+          voluptas, nostrum sequi temporibus quod impedit veniam doloribus
+          aperiam ducimus numquam voluptatum illum consectetur! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Placeat facilis libero
+          tenetur iusto, autem expedita et fugiat vitae provident corporis?
+        </p>
+      </div>
+    </section>
+
+    <!-- My Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h3>My Projects</h3>
+        <div
+          id="projectCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/1.png" class="d-block w-100" alt="Project 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/2.png" class="d-block w-100" alt="Project 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/3.png" class="d-block w-100" alt="Project 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/4.png" class="d-block w-100" alt="Project 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/5.png" class="d-block w-100" alt="Project 5" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h3>Contact Me</h3>
+        <div class="mb-3">
+          <!-- Replace the src value with your Google Maps embed link -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509674!2d144.9554313156826!3d-37.81720974253878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e388a3c15db!2sGoogle!5e0!3m2!1sen!2sus!4v1622651607577!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container d-flex justify-content-center">
+        <a href="#" class="text-white me-3"
+          ><i class="feather-icon" data-feather="facebook"></i
+        ></a>
+        <a href="#" class="text-white me-3"
+          ><i class="feather-icon" data-feather="twitter"></i
+        ></a>
+        <a href="#" class="text-white"
+          ><i class="feather-icon" data-feather="linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top btn btn-primary" onclick="scrollToTop()">
+      <i class="feather-icon" data-feather="arrow-up"></i>
+    </button>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="btn btn-secondary" onclick="toggleDarkMode()">
+      Dark Mode
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      const scrollToTopBtn = document.querySelector(".scroll-to-top");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          scrollToTopBtn.style.display = "flex";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
